@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c3c9e86f7cb398f929cc38003b57ad, type: 3}
+  m_Name: GamePrefabs
+  m_EditorClassIdentifier: Assembly-CSharp::HotelMerge.GamePrefabs
+  HotelUpgrades: {fileID: 11400000, guid: 4b258cb852efd446799ab97746a03e3c, type: 2}
+  UpgradeRow: {fileID: 8686882934930617262, guid: f27287176bb01c40e89a83ec3e4a471b, type: 3}
+  FxImage: {fileID: 277502808791316402, guid: bb3fa8d739bf8a18da4c91b7a6392e06, type: 3}
+  FxText: {fileID: 8287615192688699452, guid: ef894e8c081a8b652a7ae7af136c9a6a, type: 3}
+  Toast: {fileID: 6464591891480666689, guid: 3c028f23c498310f6b7da0378baeb180, type: 3}
+  Item: {fileID: 1974126849450547500, guid: ad8203e035bdb2121bb1d29ce40c8060, type: 3}
+  OrderCard: {fileID: 69636900705319052, guid: 09a5585f4333f6abdbf35f23937946b1, type: 3}
+  OrderIcon: {fileID: 7100553300196130705, guid: ee92abe980174d713a32e7aa080f1a26, type: 3}
+  RoomMarker: {fileID: 8211247707748018473, guid: 19327f475f17be3d5ac83de8d9c716b3, type: 3}
+  RoomPlate: {fileID: 3074956261977373485, guid: 569b4cb49af1c0cddb0b177832701970, type: 3}
+  Guest: {fileID: 5319207583295155776, guid: ccf834787b06afb7f96106a14bf850c6, type: 3}
+  TaskNote: {fileID: 341057388089195846, guid: cd805a99fce6ba5758ca9c51342a97c5, type: 3}
+  TaskDetail: {fileID: 8247634305728108194, guid: 7b3727d1ed8ff954fa2a236bf9749297, type: 3}
+  ItemTile: {fileID: 5138474389747670776, guid: 7faebaad2e97becf1b1f44ed1811ee69, type: 3}
+  OrderPopup: {fileID: 3397542528805440776, guid: b19ec0fe3e36ce5a288df09bcd406966, type: 3}
+  RoomPopup: {fileID: 1203603787491748121, guid: 91b1d6d33b72bc298b148513d4163f3e, type: 3}
+  BuildPopup: {fileID: 3277497617942300508, guid: b78d5dcfad3cbff8eb00c91a0f5178dd, type: 3}
+  EnergyShop: {fileID: 5591774800047762238, guid: 71a74fdc327596ca69288e7fd32b3253, type: 3}
+  AreaPopup: {fileID: 4690907829909681024, guid: 5de94f6b62fe785269909f131c24d655, type: 3}
+  Settings: {fileID: 139382788578170862, guid: f5c314bc68836b98b8a9f8293ec1ba31, type: 3}
+  TasksPopup: {fileID: 11869119630659786, guid: 6f39437913e0f571ba045f87d9d93920, type: 3}
+  DailyRewardPopup: {fileID: 3188492884492743123, guid: a96b43228fba85fba9e8877592616ff1, type: 3}

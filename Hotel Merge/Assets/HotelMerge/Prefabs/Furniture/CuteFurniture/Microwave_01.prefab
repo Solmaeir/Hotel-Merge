@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7359762343191150340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6217389679958023982}
+  - component: {fileID: 8595404728209743549}
+  m_Layer: 0
+  m_Name: Microwave_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6217389679958023982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359762343191150340}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4334444205965641164}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8595404728209743549
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7359762343191150340}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 0.42892757, y: 0.32187554, z: 0.32805264}
+  m_Center: {x: 0, y: 0.16093777, z: 0}
+--- !u!1001 &4300290543527158311
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6217389679958023982}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0012328774
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000005662441
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.01902622
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cbad387d65370614b3b6bd7450f8d66, type: 2}
+    - target: {fileID: -5520514654748382696, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5cbad387d65370614b3b6bd7450f8d66, type: 2}
+    - target: {fileID: 919132149155446097, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+      propertyPath: m_Name
+      value: Microwave_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+--- !u!4 &4334444205965641164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 750f05e30e7092ec599ce8e17db65fc2, type: 3}
+  m_PrefabInstance: {fileID: 4300290543527158311}
+  m_PrefabAsset: {fileID: 0}

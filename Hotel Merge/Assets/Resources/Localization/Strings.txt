@@ -1,0 +1,303 @@
+tr	en
+# First column: Turkish source text (the key, exactly as in the game). Add a column per language. \n = new line.
+%0 tamam	0% done
+%{0} tamam  •  {1}. yıldız %{2}'de	{0}% done  •  star {1} at {2}%
++{0} enerji	+{0} energy
+0/2 hazır	0/2 ready
+1 yıldız	1 star
+5 yıldız! Tüm yükseltmeler tamam.	5 stars! Every upgrade is done.
+60 × 6 oda	60 × 6 rooms
+ALANLAR	AREAS
+Alanlar	Areas
+Altın Can Simidi	Golden Lifebuoy
+Altın Resepsiyon Zili	Golden Desk Bell
+Altın Servis Kabı	Golden Cloche
+Altın servis kabına dokun, aynı ürünleri sürükleyip birleştir!	Tap the golden cloche, then drag matching items together to merge!
+Ayarlar	Settings
+Aydınlatma	Lighting
+Aynı iki ürünü üst üste sürükle, bir üst seviyeye birleşsin!	Drag two matching items together to level them up!
+AÇIK	ON
+Açıklama	Description
+Banyo	Bath
+Banyo ve konfor malzemeleri	Bath and comfort supplies
+Başlık	Title
+Berjer	Armchair
+Bir Avuç	A Handful
+Bir Kova	A Bucket
+Bir işletme seç ve yükseltmelerini satın al	Pick a business and buy its upgrades
+Birleştir  •  Servis Et  •  Büyüt	Merge  •  Serve  •  Grow
+Bitki	Plant
+Bornoz	Bathrobe
+Boş Arsa	Empty Lot
+Bu alan için kabul edilmiş sipariş yok.\nOtelde misafirlerin isteklerini kabul et!	No accepted orders for this area.\nAccept guests' requests in the hotel!
+Bu kattaki odalar dolu	This floor is full
+Bu sipariş hazır! Otelde Oda {0}'deki onay işaretine dokun.	This order is ready! Tap the check mark in Room {0} at the hotel.
+Büyük Kanepe	Large Sofa
+Büyük Tablo	Large Painting
+Büyük Tablolar	Large Paintings
+Daha fazla misafir, daha fazla kazanç!	More guests, more coins!
+Dalış Maskesi	Diving Mask
+Dev Bitki	Giant Plant
+Dev Palmiye	Giant Palm
+Dil	Language
+Diş Fırçası	Toothbrush
+Dokun: yeni ürün çıkar (1 enerji)	Tap: make a new item (1 energy)
+Dolu Depo	Full Tank
+Duvar Kağıdı	Wallpaper
+EN AVANTAJLI	BEST VALUE
+Ekle: {0}	Add: {0}
+En az {0} oda gerekli ({1}/{0})	Needs at least {0} rooms ({1}/{0})
+Enerji Mağazası	Energy Shop
+Enerji deposu tamamen dolu!	Your energy tank is completely full!
+Enerjin azaldı mı?	Running low on energy?
+Eski Somya	Old Bed Frame
+Flamingo	Flamingo
+GÖREV PANOSU	TASK BOARD
+Görev	Task
+Görevler	Tasks
+Güneş Gözlüğü	Sunglasses
+Güneş Kremi	Sunscreen
+GİT	GO
+HAVUZ	POOL
+HAZIR!	READY!
+HAZIR! Otelde teslim et	READY! Deliver it at the hotel
+Halı	Rug
+Hamburger	Burger
+Harika! Paranla İnşa menüsünden yeni odalar açabilirsin.	Great! Use your coins in the Build menu to open new rooms.
+Hasır Kilim	Straw Mat
+Hasır Şapka	Straw Hat
+Havlu	Towel
+Havlu Seti	Towel Set
+Havuz	Pool
+Havuz Eğlencesi	Pool Fun
+Havuz Görevi	Pool Task
+Havuz Topu	Beach Ball
+Havuz oyuncakları ve plaj eşyaları	Pool toys and beach gear
+Havuza Git	Go to Pool
+Hazırla	Prepare
+Henüz kabul edilmiş sipariş yok.\nOtelde misafirlerin isteklerine dokunup kabul et!	No accepted orders yet.\nTap guests' requests in the hotel and accept them!
+Her yükseltme açık {0} odanın hepsine uygulanır.	Each upgrade applies to all {0} open rooms.
+Hizmet Görevi	Services Task
+Hizmetlere Git	Go to Services
+Hotel Merge v1.0	Hotel Merge v1.0
+HİZMETLER	SERVICES
+KAPALI	OFF
+Kabul Et	Accept
+Kafe Masası	Café Table
+Kahve	Coffee
+Kahve Köşesi	Coffee Corner
+Kahve Servisi	Coffee Service
+Kanepe	Sofa
+Kolluk	Armbands
+Koltuk	Seating
+Komodin	Nightstand
+Konfor	Comfort
+Kurabiye Standı	Cookie Stand
+Küçük Saksı	Small Pot
+Küçük Tablo	Small Painting
+Lambader	Floor Lamp
+Limonata	Lemonade
+Lobi	Lobby
+Lobi Bitkileri	Lobby Plants
+Lobi Koltukları	Lobby Sofas
+Lobi Tabloları	Lobby Paintings
+Lobi yenilendi!	Lobby renovated!
+Lobi yükseltmeleri tek seferlik alınır.	Lobby upgrades are bought once.
+Lüks Koltuk	Luxury Armchair
+Lüks Çift Kişilik Yatak	Luxury Double Bed
+MAKS	MAX
+MUTFAK	KITCHEN
+Manzara Tablosu	Landscape Painting
+Mağaza	Shop
+Mesaj	Message
+Milkshake	Milkshake
+Misafirin isteğini görmek için odadaki balona dokun!	Tap the bubble in the room to see what the guest wants!
+Mutfak	Kitchen
+Mutfak Görevi	Kitchen Task
+Mutfağa Git	Go to Kitchen
+OYNA	PLAY
+Oda 1	Room 1
+Oda 1: ...	Room 1: ...
+Oda 2'i aç	Open Room 2
+Oda {0}	Room {0}
+Oda {0} misafiri çok bekledi ve ayrıldı...	The guest in Room {0} waited too long and left...
+Oda {0} yeni misafirini bekliyor...	Room {0} is waiting for its next guest...
+Oda {0}'i aç	Open Room {0}
+Oda {0}: {1}	Room {0}: {1}
+Odalar	Rooms
+Otel	Hotel
+Otel 5 yıldızlı!	Your hotel has 5 stars!
+Otel Hizmetleri	Hotel Services
+Otel Yükseltmeleri	Hotel Upgrades
+Otel en yüksek katta!	The hotel is at its top floor!
+Otelin {0} yıldızlı oldu! Siparişlerden %{1} fazla kazanırsın.	Your hotel now has {0} stars! Orders pay {1}% more.
+Otelinin ilk misafirleri yolda!	Your hotel's first guests are on their way!
+Pasta	Cake
+Pizza	Pizza
+Plaj	Beach
+Rahat Yatak	Comfy Bed
+Reddet	Decline
+Renkli Duvar Kağıdı	Colourful Wallpaper
+Sabun	Soap
+Sade Sıva	Bare Plaster
+Saksı Bitkisi	Potted Plant
+Saksı Çiçeği	Flower Pot
+Salon Bitkisi	House Plant
+Sandviç	Sandwich
+Sat	Sell
+Saç Kurutma	Hair Dryer
+Ses	Sound
+Sev. 1/4	Lv. 1/4
+Sev. 2: Rahat Yatak	Lv. 2: Comfy Bed
+Sev. {0}/{1}	Lv. {0}/{1}
+Sev. {0}: {1}	Lv. {0}: {1}
+Simit	Swim Ring
+Sipariş görevlere eklendi! Mutfağa gidip hazırla.	Order added to your tasks! Go to the kitchen and prepare it.
+Sipariş hazır! Otelde Oda {0}'deki onay işaretine dokunarak teslim et.	Order ready! Tap the check mark in Room {0} at the hotel to deliver it.
+Sipariş!	Order!
+Siparişi hazırlanıyor	Order in progress
+Son seviye: {0}	Max level: {0}
+Sonraki işletmeyi tamamlayınca açılır.	Opens after you complete the next business.
+Spa Sepeti	Spa Basket
+Su	Water
+Süt	Milk
+Sıradaki: Oda {0}	Next: Room {0}
+Tablo	Painting
+Tablolar	Paintings
+Tabure	Stool
+Tahta Bank	Wooden Bench
+Tahta Kasa	Wooden Crate
+Tahta dolu! Ürünleri birleştir ya da sat.	The board is full! Merge or sell some items.
+Tarak	Comb
+Tebrikler! Otelin 5 yıldızlı oldu!	Congratulations! Your hotel has 5 stars!
+Tek Kişilik Yatak	Single Bed
+Terlik	Slippers
+Teslim Et!	Deliver!
+Tost	Toast
+Valiz	Suitcase
+Yatak	Bed
+Yatak • Sev. 1	Bed • Lv. 1
+Yemekler	Food
+Yeni Kat	New Floor
+Yeni Oda	New Room
+Yeni alan aç!	Open a new area!
+Yeni işletme: oteli 5 yıldız ve 7 kata çıkarınca açılır.	New business: opens when your hotel has 5 stars and 7 floors.
+Yeni misafir geldi!	A new guest has arrived!
+Yeterli paran yok!	Not enough coins!
+Yeterli paran yok! {0} coin daha gerekli.	Not enough coins! You need {0} more.
+Yok	None
+Yumurta	Egg
+Yumuşak Halı	Soft Rug
+Yükleniyor... %{0}	Loading... {0}%
+Yükselt	Upgrade
+tek sefer	one-time
+{0}  •  Seviye {1}/{2}	{0}  •  Level {1}/{2}
+{0} alanında birleştir, sonra teslim et.	Merge it in the {0} area, then deliver it.
+{0} açıldı! Misafirler artık buradan da isteyecek.	{0} is open! Guests will now order from here too.
+{0} açıldı! {1}'na dokunarak üretmeye başla.	{0} is open! Tap the {1} to start making items.
+{0} görev bekliyor	{0} tasks waiting
+{0} oda  •  {1} mutlu misafir	{0} rooms  •  {1} happy guests
+{0} oda yenilendi!	{0} rooms renovated!
+{0} yıldız  •  yükseltmeler %{1}	{0} stars  •  upgrades {1}%
+{0} × {1} oda	{0} × {1} rooms
+{0}. kat inşa edildi! Yeni odaları açabilirsin.	Floor {0} is built! You can open new rooms.
+{0}. kat • 4 yeni oda	Floor {0} • 4 new rooms
+{0}/{1} hazır	{0}/{1} ready
+Çay	Tea
+Çıplak Ampul	Bare Bulb
+Önce bu kattaki tüm odaları aç	Open every room on this floor first
+Önce sıradaki odayı aç!	Open the next room first!
+Önce yeni bir kat inşa et!	Build a new floor first!
+Önce önceki alanı aç	Open the previous area first
+Ürün	Item
+Ütü	Iron
+İnşa	Build
+İnşa Et	Build
+İpucu: Aynı iki ürünü üst üste sürükleyerek birleştir!	Tip: Drag two identical items together to merge them!
+İpucu: Mağazadan alınan yükseltmeler tüm odalara uygulanır.	Tip: Upgrades from the shop apply to every room.
+İpucu: Oyun kapalıyken bile enerjin dolmaya devam eder.	Tip: Your energy keeps refilling even while the game is closed.
+İpucu: Tüm yükseltmeleri tamamla, otelin 5 yıldızlı olsun!	Tip: Complete every upgrade to make your hotel 5 stars!
+İpucu: Yıldızlar arttıkça siparişlerden daha çok kazanırsın.	Tip: The more stars you have, the more orders pay.
+İçecekler	Drinks
+İçecekler ve yemekler	Drinks and meals
+İşletme Paneli	Business Panel
+İşletmelerim	My Businesses
+Şampuan	Shampoo
+Şemsiye	Umbrella
+Şezlong	Sun Lounger
+Şişme Yatak	Pool Float
+Şişme Ördek	Rubber Duck
+Şu an 0/50.	Now 0/50.
+Şu an {0} enerjin var. Dolu depo bile olsa fazlası saklanır!	You have {0} energy. Extra energy is kept even above the limit!
+Şu an {0}/{1}. Bekleyince her {2} saniyede 1 dolar.	Now {0}/{1}. Refills 1 every {2} seconds while you wait.
+Şunları istiyor ({0}):	Wants these ({0}):
+Şunları istiyor:	Wants these:
+Şık Dolap	Stylish Cabinet
+Yükleniyor... %30	Loading... 30%
+# Match-3 test board
+MEYVE PATLAT	FRUIT POP
+Hamle	Moves
+Puan	Score
+Hedef: {0}	Goal: {0}
+Puan: {0}	Score: {0}
+Yeniden Başla	Restart
+Tekrar Oyna	Play Again
+Seviye Tamamlandı!	Level Complete!
+Hamleler Bitti!	Out of Moves!
+Karıştırılıyor!	Shuffling!
+# UI kit: HUD, nav bar, daily tasks, daily reward
+Günlük Ödül	Daily Reward
+Hazır!	Ready!
+Oyna	Play
+Geliştir	Upgrade
+Siparişler	Orders
+SİPARİŞLER	ORDERS
+Lv. 1	Lv. 1
+Buton	Button
+Merhaba!	Hello!
+Günlük	Daily
+Haftalık	Weekly
+Seviye {0}! +{1} altın kazandın.	Level {0}! You earned +{1} coins.
+Günlük Görevler	Daily Tasks
+Yeni görevler: {0}	New tasks in {0}
+Yeni görevler: 0:00	New tasks in 0:00
+Git	Go
+Al	Claim
+{0} misafire hizmet et	Serve {0} guests
+3 misafire hizmet et	Serve 3 guests
+{0} kez birleştir	Merge {0} times
+{0} ürün üret	Make {0} items
+Siparişlerden {0} altın kazan	Earn {0} coins from orders
+{0} yükseltme satın al	Buy {0} upgrade(s)
+Ödülü Al	Claim Reward
+Yarın Gel	Come Back Tomorrow
+Sıradaki ödül: {0}	Next reward in {0}
+{0}. gün ödülün hazır: {1} altın ve {2} enerji!	Day {0} reward is ready: {1} coins and {2} energy!
++{0} altın  +{1} enerji	+{0} coins  +{1} energy
+Bu alan için kabul edilmiş sipariş yok. Otelde misafirlerin isteklerini kabul et!	No accepted orders for this area. Accept your guests' requests in the hotel!
+1. Gün	Day 1
+2. Gün	Day 2
+3. Gün	Day 3
+4. Gün	Day 4
+5. Gün	Day 5
+6. Gün	Day 6
+7. Gün	Day 7
+Hoş geldin! Misafirlerimiz seni bekliyor, otelimizi birlikte büyütelim.	Welcome! Our guests are waiting, let's grow our hotel together.
+İşletme	Business
+# Daily task pool and player level
++{0} XP	+{0} XP
+Bu kat için seviye {0} gerekli.	This floor needs level {0}.
+Bu oda için seviye {0} gerekli.	This room needs level {0}.
+Oda {0} için seviye {1} gerekli. Siparişlerle XP kazan!	Room {0} needs level {1}. Earn XP with orders!
+Seviye {0}	Level {0}
+Seviye {0} gerekli (şu an {1})	Needs level {0} (now {1})
+Seviye {0} • {1}/{2} XP	Level {0} • {1}/{2} XP
+Seviye {0}! +{1} altın, +{2} enerji kazandın.	Level {0}! You earned +{1} coins and +{2} energy.
+Seviye {0}! Artık açılabilir: {1}	Level {0}! Now you can open: {1}
+Seviye {0}: {1}	Level {0}: {1}
+{0} altın harca	Spend {0} coins
+{0} siparişi kabul et	Accept {0} orders
+{0} tane {1}. seviye ürün yap	Make {0} level-{1} items
+{0} ürün sat	Sell {0} items
+{0}. kat	Floor {0}
+{1} alanında {0} kez birleştir	Merge {0} times in {1}

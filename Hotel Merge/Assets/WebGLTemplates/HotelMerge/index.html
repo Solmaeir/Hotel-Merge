@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#ff8fb8">
+    <title>{{{ PRODUCT_NAME }}}</title>
+    <link rel="icon" type="image/png" href="TemplateData/favicon.png">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="apple-touch-icon" href="TemplateData/apple-touch-icon.png">
+    <link rel="preload" href="TemplateData/GameFont.woff2" as="font" type="font/woff2" crossorigin>
+#if SHOW_DIAGNOSTICS
+    <link rel="stylesheet" href="<<<TemplateData/diagnostics.css>>>">
+    <script src="<<<TemplateData/diagnostics.js>>>"></script>
+#endif
+    <style>
+      /* Same look as the Splash scene (Assets/Scenes/Splash.unity), so the web loader hands over to it seamlessly. */
+      @font-face { font-family: "GameFont"; src: url("TemplateData/GameFont.woff2") format("woff2"); font-display: block; }
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+      body {
+        --bg: linear-gradient(180deg, #ff8fb8 0%, #f68bb3 30%, #ec86ae 50%, #e07da5 62%, #cc7199 73%, #b4638b 83%, #96527a 94%, #814570 100%);
+        background: #ff8fb8 var(--bg);
+        display: flex; align-items: center; justify-content: center;
+        font-family: "GameFont", "Noto Sans", system-ui, sans-serif;
+        -webkit-tap-highlight-color: transparent; user-select: none; -webkit-user-select: none;
+      }
+      /* Desktop: a phone-shaped 9:16 window as tall as the browser allows. Mobile: the whole screen. */
+      #stage {
+        position: relative; overflow: hidden; background: var(--bg);
+        height: min(100vh, calc(100vw * 16 / 9)); aspect-ratio: 9 / 16;
+        box-shadow: 0 0 60px rgba(58, 36, 56, 0.35);
+      }
+      #stage.mobile { width: 100vw; height: 100vh; height: 100dvh; aspect-ratio: auto; box-shadow: none; }
+      #unity-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; outline: none; background: transparent; }
+
+      #loader { position: absolute; inset: 0; background: var(--bg); transition: opacity 0.35s ease; overflow: hidden; }
+      #loader.hide { opacity: 0; pointer-events: none; }
+      #loader .float { position: absolute; opacity: 0.4; animation: drift linear infinite; will-change: transform; }
+      @keyframes drift {
+        0%   { transform: translate(0, 0) rotate(0deg); }
+        50%  { transform: translate(var(--dx), var(--dy)) rotate(var(--r)); }
+        100% { transform: translate(0, 0) rotate(0deg); }
+      }
+      #glow, #logo, #bar, #tip { position: absolute; left: 50%; transform: translate(-50%, -50%); }
+      #logo img { display: block; width: 100%; height: 100%; object-fit: contain; animation: wobble 4.8s 1s ease-in-out infinite; }
+      #glow { opacity: 0.55; animation: spin 30s linear infinite; }
+      @keyframes spin { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+      #logo { animation: pop 0.9s 0.1s both; }
+      @keyframes pop {
+        0% { transform: translate(-50%, -50%) scale(0); }
+        40% { transform: translate(-50%, -50%) scale(1.12); }
+        60% { transform: translate(-50%, -50%) scale(0.95); }
+        80% { transform: translate(-50%, -50%) scale(1.02); }
+        100% { transform: translate(-50%, -50%) scale(1); }
+      }
+      @keyframes wobble {
+        0%, 100% { transform: rotate(0deg); }
+        25% { transform: rotate(1.5deg); }
+        75% { transform: rotate(-1.5deg); }
+      }
+      #bar { background: rgba(44, 24, 56, 0.55); border-radius: 999px; animation: pop 0.4s 0.5s both; }
+      #fill { position: absolute; left: 0; top: 0; bottom: 0; width: 5%; background: #ffd23a; border-radius: 999px; transition: width 0.25s ease-out; }
+      .outlined {
+        color: #fff; white-space: nowrap; text-align: center; font-weight: 700;
+        --o: calc(var(--u) * 2.5px);
+        text-shadow:
+          var(--o) var(--o) 0 #3a2438, calc(-1 * var(--o)) var(--o) 0 #3a2438,
+          var(--o) calc(-1 * var(--o)) 0 #3a2438, calc(-1 * var(--o)) calc(-1 * var(--o)) 0 #3a2438,
+          0 calc(var(--u) * 4.5px) 0 #3a2438;
+      }
+      #percent { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+      #tip { white-space: normal; line-height: 1.2; }
+      #error {
+        display: none; position: absolute; left: 50%; bottom: 6%; transform: translateX(-50%); width: 84%;
+        padding: 14px 18px; border-radius: 18px; background: #fff; color: #3a2438; text-align: center;
+        font-size: 15px; box-shadow: 0 6px 0 rgba(58, 36, 56, 0.35);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} tabindex="-1"></canvas>
+      <div id="loader">
+        <img id="glow" src="TemplateData/glow.png" alt="">
+        <div id="logo"><img src="TemplateData/logo.png" alt="{{{ PRODUCT_NAME }}}"></div>
+        <div id="bar"><div id="fill"></div><div id="percent" class="outlined"></div></div>
+        <div id="tip" class="outlined"></div>
+      </div>
+      <div id="error"></div>
+    </div>
+#if SHOW_DIAGNOSTICS
+    <img id="diagnostics-icon" src="TemplateData/webmemd-icon.png" style="position: fixed; right: 0; bottom: 10px;">
+#endif
+    <script>
+      var stage = document.querySelector("#stage");
+      var canvas = document.querySelector("#unity-canvas");
+      var loader = document.querySelector("#loader");
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) stage.className = "mobile";
+
+      // Language chosen in the game's settings (written by Assets/Plugins/WebGL/HotelMerge.jslib); English by default.
+      var lang = "en";
+      try { lang = localStorage.getItem("hotelmerge_lang") || "en"; } catch (e) {}
+      var text = {
+        en: {
+          loading: "Loading... {0}%",
+          tips: [
+            "Tip: Drag two identical items together to merge them!",
+            "Tip: Upgrades from the shop apply to every room.",
+            "Tip: Complete every upgrade to make your hotel 5 stars!",
+            "Tip: Your energy keeps refilling even while the game is closed.",
+            "Tip: The more stars you have, the more orders pay."
+          ]
+        },
+        tr: {
+          loading: "Yükleniyor... %{0}",
+          tips: [
+            "İpucu: Aynı iki ürünü üst üste sürükleyerek birleştir!",
+            "İpucu: Mağazadan alınan yükseltmeler tüm odalara uygulanır.",
+            "İpucu: Tüm yükseltmeleri tamamla, otelin 5 yıldızlı olsun!",
+            "İpucu: Oyun kapalıyken bile enerjin dolmaya devam eder.",
+            "İpucu: Yıldızlar arttıkça siparişlerden daha çok kazanırsın."
+          ]
+        }
+      }[lang] || null;
+      if (!text) text = { loading: "Loading... {0}%", tips: ["Tip: Drag two identical items together to merge them!"] };
+      document.documentElement.lang = lang;
+      document.querySelector("#tip").textContent = text.tips[Math.floor(Math.random() * text.tips.length)];
+
+      // Floating sparkles / bubbles / stars like the scene's Floaties.
+      ["sparkle", "circle", "star"].forEach(function (name) {
+        for (var i = 0; i < 5; i++) {
+          var img = document.createElement("img");
+          img.src = "TemplateData/" + name + ".png";
+          img.className = "float";
+          img.dataset.size = 50 + Math.random() * 80;
+          img.style.left = Math.random() * 100 + "%";
+          img.style.top = Math.random() * 100 + "%";
+          img.style.setProperty("--dx", (Math.random() * 60 - 30) + "px");
+          img.style.setProperty("--dy", (Math.random() * 80 - 40) + "px");
+          img.style.setProperty("--r", (Math.random() * 60 - 30) + "deg");
+          img.style.animationDuration = (6 + Math.random() * 6) + "s";
+          img.style.animationDelay = (-Math.random() * 10) + "s";
+          loader.insertBefore(img, loader.firstChild);
+        }
+      });
+
+      // Positions in the Splash scene's 1080x1920 design units, fitted like ScreenFit (never cropped).
+      function place(el, w, h, yFromCenter, yFromBottom) {
+        var u = layout.u, H = stage.clientHeight;
+        el.style.width = w * u + "px";
+        if (h) el.style.height = h * u + "px";
+        el.style.top = (yFromBottom != null ? H - yFromBottom * u : H / 2 - yFromCenter * u) + "px";
+      }
+      function layout() {
+        if (!loader.isConnected) return; // the loader is gone once the game runs (e.g. resize on fullscreen)
+        var u = layout.u = Math.min(stage.clientWidth / 1080, stage.clientHeight / 1920);
+        stage.style.setProperty("--u", u);
+        place(document.querySelector("#glow"), 1100, 1100, 160);
+        place(document.querySelector("#logo"), 980, 460, 160);
+        place(document.querySelector("#bar"), 700, 64, null, 360);
+        place(document.querySelector("#tip"), 900, 0, null, 250);
+        var fill = document.querySelector("#fill");
+        fill.style.margin = 8 * u + "px";
+        fill.style.top = fill.style.bottom = fill.style.left = 0;
+        document.querySelector("#percent").style.fontSize = 32 * u + "px";
+        document.querySelector("#tip").style.fontSize = 36 * u + "px";
+        loader.querySelectorAll(".float").forEach(function (img) { img.style.width = img.dataset.size * u + "px"; });
+      }
+      layout();
+      window.addEventListener("resize", layout);
+
+      var shown = 0;
+      function setProgress(p) {
+        shown = Math.max(shown, p);
+        var inner = document.querySelector("#bar").clientWidth - 16 * layout.u;
+        document.querySelector("#fill").style.width = Math.max(0.05, shown) * inner + "px";
+        document.querySelector("#percent").textContent = text.loading.replace("{0}", Math.round(shown * 100));
+      }
+      setProgress(0);
+
+      function showError(msg) {
+        var box = document.querySelector("#error");
+        box.innerHTML = msg;
+        box.style.display = "block";
+      }
+      function unityShowBanner(msg, type) {
+        if (type == "error") showError(msg);
+        else console.warn(msg);
+      }
+
+      var buildUrl = "Build";
+      var config = {
+        arguments: [],
+        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+#if USE_THREADS
+        workerUrl: buildUrl + "/{{{ WORKER_FILENAME }}}",
+#endif
+#if USE_WASM
+        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+#endif
+#if SYMBOLS_FILENAME
+        symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
+#endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+        productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+        productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+        showBanner: unityShowBanner,
+      };
+
+      var script = document.createElement("script");
+      script.src = buildUrl + "/{{{ LOADER_FILENAME }}}";
+      script.onload = function () {
+        createUnityInstance(canvas, config, setProgress).then(function (unityInstance) {
+          setProgress(1);
+          // The Splash scene is already drawing the same picture underneath; give its logo time to pop in, then fade.
+          setTimeout(function () {
+            loader.classList.add("hide");
+            setTimeout(function () {
+              window.removeEventListener("resize", layout);
+              loader.remove();
+            }, 400);
+            canvas.focus();
+          }, 900);
+#if SHOW_DIAGNOSTICS
+          document.getElementById("diagnostics-icon").onclick = function () {
+            unityDiagnostics.openDiagnosticsDiv(unityInstance.GetMetricsInfo);
+          };
+#endif
+        }).catch(function (message) {
+          showError(message);
+        });
+      };
+      script.onerror = function () { showError("Could not load the game files."); };
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>

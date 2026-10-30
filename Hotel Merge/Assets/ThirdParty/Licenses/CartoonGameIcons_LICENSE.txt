@@ -1,0 +1,12 @@
+AssetsFactory Asset License v1.0
+Product: Cartoon Game Icons Free Sampler (free)
+
+Summary: use these files in your own games and projects, commercial or not. Do not resell or redistribute the files themselves.
+
+1. You may use, modify and include these files in any number of your own projects (games, apps, videos, prototypes), commercial or non-commercial.
+2. You may distribute the files only as part of a finished project, in a form that end users cannot easily extract and reuse as assets.
+3. You may not sell, share, sublicense or give away the files, alone or in another asset pack, template or kit, even if modified.
+4. Credit is appreciated but not required.
+5. AI tools were used in the making of these assets. If your platform asks you to declare AI-generated content (for example Steam), declare them.
+6. Copyright: AI-generated content may not be protected by copyright in some countries. This license is a contract between you and the seller.
+7. The files are provided as is, without warranty.

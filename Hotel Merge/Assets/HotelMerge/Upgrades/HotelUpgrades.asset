@@ -1,0 +1,452 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c809d7bae5ba7139ab51813f2effbf01, type: 3}
+  m_Name: HotelUpgrades
+  m_EditorClassIdentifier: Assembly-CSharp::HotelMerge.UpgradeCatalog
+  BusinessName: Otel
+  Upgrades:
+  - Id: bed
+    Name: Yatak
+    Scope: 0
+    Kind: 0
+    StartLevel: 1
+    Anchors:
+    - {x: -0.62, y: 0.06, z: 2.35}
+    Levels:
+    - Label: Eski Somya
+      Cost: 0
+      Icon: Furniture/BasicBed
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 9187207740455352225, guid: 656fd37ee45b4598a90e77181a4ebd4d, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.05
+    - Label: "Tek Ki\u015Filik Yatak"
+      Cost: 60
+      Icon: Furniture/Bed_07
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 1630659210846706316, guid: c265dc92cf2292a089c9b76d1f82a050, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.9
+    - Label: Rahat Yatak
+      Cost: 150
+      Icon: Furniture/Bed
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 8732597496517818018, guid: 4037892c659e54b3f9473ea421b9d0c0, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.7
+    - Label: "L\xFCks \xC7ift Ki\u015Filik Yatak"
+      Cost: 300
+      Icon: Furniture/Bed_02
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 4888297027752351728, guid: 2024fabd0520606ba996d7eff4efa200, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.75
+  - Id: nightstand
+    Name: Komodin
+    Scope: 0
+    Kind: 0
+    StartLevel: 1
+    Anchors:
+    - {x: 0.72, y: 0.06, z: 3.08}
+    Levels:
+    - Label: Tahta Kasa
+      Cost: 0
+      Icon: Furniture/BasicCrate
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 2396601290917520222, guid: dd7ce63ce5180cebc94533f71c3c5bbf, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.13
+    - Label: Komodin
+      Cost: 50
+      Icon: Furniture/Nightstand_02
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 3169425129625152246, guid: 35fe150f6bcfaf11589064c0ca952118, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.3
+    - Label: "\u015E\u0131k Dolap"
+      Cost: 140
+      Icon: Furniture/Cabinet_1
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 2305403739264496171, guid: 043c132871c7b1d8ca449d8d887b8f14, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.75
+  - Id: light
+    Name: "Ayd\u0131nlatma"
+    Scope: 0
+    Kind: 0
+    StartLevel: 1
+    Anchors:
+    - {x: 0, y: 0.06, z: 0}
+    Levels:
+    - Label: "\xC7\u0131plak Ampul"
+      Cost: 0
+      Icon: Furniture/BasicBulb
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 6446614918526381336, guid: dd8af4c553336ff01aeb5bdad90b2c2a, type: 3}
+        Offset: {x: 0.1, y: 2.62, z: 1.9}
+        Yaw: 0
+        Scale: 1
+    - Label: Lambader
+      Cost: 70
+      Icon: Furniture/Light_05
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 7582276573177974166, guid: 9a6d142982fc5c55281c05037a049e41, type: 3}
+        Offset: {x: 1.24, y: 0, z: 3.05}
+        Yaw: 180
+        Scale: 0.82
+  - Id: seat
+    Name: Koltuk
+    Scope: 0
+    Kind: 0
+    StartLevel: 0
+    Anchors:
+    - {x: 0.95, y: 0.06, z: 2.05}
+    Levels:
+    - Label: Tabure
+      Cost: 40
+      Icon: Furniture/Chair_17
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 3256326808212370026, guid: 14f8e8a90d17efb01acb1570dc1d5a87, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 205
+        Scale: 1.3
+    - Label: Berjer
+      Cost: 110
+      Icon: Furniture/Armchair_02
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 7325920484249049403, guid: fe0effd8868fff198b9c99a627ded6e2, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 205
+        Scale: 0.9
+    - Label: "L\xFCks Koltuk"
+      Cost: 220
+      Icon: Furniture/Armchair_18
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 7958935529628143429, guid: b0fead2448486d9049f8fe4c47da327e, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 205
+        Scale: 0.89
+  - Id: plant
+    Name: Bitki
+    Scope: 0
+    Kind: 0
+    StartLevel: 0
+    Anchors:
+    - {x: 1.2, y: 0.06, z: 0.72}
+    Levels:
+    - Label: "K\xFC\xE7\xFCk Saks\u0131"
+      Cost: 25
+      Icon: Furniture/Cafe_Plant_1
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 3589608685589608545, guid: fcde020e4f424ef8db8b0099da36c491, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.01
+    - Label: "Saks\u0131 \xC7i\xE7e\u011Fi"
+      Cost: 60
+      Icon: Furniture/Flower
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 3475150810172589308, guid: 7597706e8f677d865a30ea191a4025f4, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.25
+    - Label: Salon Bitkisi
+      Cost: 120
+      Icon: Furniture/Plants_15
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 1563079846380152792, guid: 0039b8271d2a1124fb7d7615fb9f5e4a, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.97
+    - Label: Dev Bitki
+      Cost: 200
+      Icon: Furniture/Plant_1
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 6282591323001882209, guid: 9c5280247cb0283058349ad0d501a04b, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.62
+  - Id: painting
+    Name: Tablo
+    Scope: 0
+    Kind: 0
+    StartLevel: 0
+    Anchors:
+    - {x: -0.62, y: 1.5, z: 3.33}
+    Levels:
+    - Label: "K\xFC\xE7\xFCk Tablo"
+      Cost: 30
+      Icon: Furniture/Picture_21
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 7832155984254376505, guid: 89ff6740c93a093c9ab5a3cc13e9d88a, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.3
+    - Label: Manzara Tablosu
+      Cost: 80
+      Icon: Furniture/Painting_2
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 6269911148700508258, guid: f98fcb5f7eb71cdb4bbc8f5b8dfcc4f6, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.14
+    - Label: "B\xFCy\xFCk Tablo"
+      Cost: 160
+      Icon: Furniture/Picture_17
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 5183994514866377095, guid: 37ffc3d0e95115bf2b8f08ac5f6e7269, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.77
+  - Id: rug
+    Name: "Hal\u0131"
+    Scope: 0
+    Kind: 0
+    StartLevel: 0
+    Anchors:
+    - {x: 0.3, y: 0.065, z: 1.45}
+    Levels:
+    - Label: "Has\u0131r Kilim"
+      Cost: 35
+      Icon: Furniture/BasicRug
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 4939708531251730481, guid: 45a3467d1950744d5aa0c952e233ba68, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.14
+    - Label: "Yumu\u015Fak Hal\u0131"
+      Cost: 90
+      Icon: Furniture/PlushRug
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 4233475843060654220, guid: 11e6a782dc783438784c4b3aa8239260, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.07
+  - Id: wallpaper
+    Name: "Duvar Ka\u011F\u0131d\u0131"
+    Scope: 0
+    Kind: 1
+    StartLevel: 1
+    Anchors:
+    - {x: 0, y: 0, z: 0}
+    Levels:
+    - Label: "Sade S\u0131va"
+      Cost: 0
+      Icon: Furniture/Wall_Plain
+      Tint: {r: 0.8117647, g: 0.76862746, b: 0.72156864, a: 1}
+      Pieces: []
+    - Label: "Renkli Duvar Ka\u011F\u0131d\u0131"
+      Cost: 45
+      Icon: Furniture/Wall_Paper
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces: []
+  - Id: lobby_sofa
+    Name: "Lobi Koltuklar\u0131"
+    Scope: 1
+    Kind: 0
+    StartLevel: 1
+    Anchors:
+    - {x: -3.9, y: 0.24, z: 2.85}
+    - {x: 3.9, y: 0.24, z: 2.85}
+    Levels:
+    - Label: Tahta Bank
+      Cost: 0
+      Icon: Furniture/BasicBench
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 3955135462687393581, guid: 39f783674fa7b5fb597b39d8de02ae50, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.19
+    - Label: Kanepe
+      Cost: 250
+      Icon: Furniture/Couch_11
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 1975482275249713071, guid: 415d40c08cbee1bf091ebebd2c717331, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.21
+    - Label: "B\xFCy\xFCk Kanepe"
+      Cost: 600
+      Icon: Furniture/Couch_08
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 4243674418211528191, guid: cc4a522205a040b41b1a8d0348267a24, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.86
+  - Id: lobby_plants
+    Name: Lobi Bitkileri
+    Scope: 1
+    Kind: 0
+    StartLevel: 0
+    Anchors:
+    - {x: -5.35, y: 0.24, z: 0.8}
+    - {x: 5.35, y: 0.24, z: 0.8}
+    Levels:
+    - Label: "Saks\u0131 Bitkisi"
+      Cost: 120
+      Icon: Furniture/Plant_1
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 6282591323001882209, guid: 9c5280247cb0283058349ad0d501a04b, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.11
+    - Label: Dev Palmiye
+      Cost: 350
+      Icon: Furniture/Plants_19
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 6759044547545133350, guid: cbeb9a1447de1ee4796e8414b6c9dd68, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.73
+  - Id: lobby_cafe
+    Name: "Kahve K\xF6\u015Fesi"
+    Scope: 1
+    Kind: 0
+    StartLevel: 0
+    Anchors:
+    - {x: 3.2, y: 0.24, z: 1}
+    Levels:
+    - Label: "Kafe Masas\u0131"
+      Cost: 300
+      Icon: Furniture/Cafe_Table_1
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 5736183970148271116, guid: 846e20bc1f0665e3d84a06f721c98c02, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.75
+      - Prefab: {fileID: 6944226334191587614, guid: 178c3d036c056614d8d03534f4c70cea, type: 3}
+        Offset: {x: -0.8, y: 0, z: 0}
+        Yaw: 90
+        Scale: 0.8
+      - Prefab: {fileID: 6944226334191587614, guid: 178c3d036c056614d8d03534f4c70cea, type: 3}
+        Offset: {x: 0.8, y: 0, z: 0}
+        Yaw: 270
+        Scale: 0.8
+    - Label: Kahve Servisi
+      Cost: 700
+      Icon: Furniture/Cafe_Table_1
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 5736183970148271116, guid: 846e20bc1f0665e3d84a06f721c98c02, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.75
+      - Prefab: {fileID: 6944226334191587614, guid: 178c3d036c056614d8d03534f4c70cea, type: 3}
+        Offset: {x: -0.8, y: 0, z: 0}
+        Yaw: 90
+        Scale: 0.8
+      - Prefab: {fileID: 6944226334191587614, guid: 178c3d036c056614d8d03534f4c70cea, type: 3}
+        Offset: {x: 0.8, y: 0, z: 0}
+        Yaw: 270
+        Scale: 0.8
+      - Prefab: {fileID: 1102112549676574604, guid: ce335b4bcd0119d77889c866805ad58f, type: 3}
+        Offset: {x: -0.2, y: 0.6225, z: -0.1}
+        Yaw: 180
+        Scale: 1
+      - Prefab: {fileID: 5163441978925784481, guid: 87aa9fa0ad3f8449aa25657e76d1772d, type: 3}
+        Offset: {x: 0.22, y: 0.6225, z: 0.05}
+        Yaw: 160
+        Scale: 1
+      - Prefab: {fileID: 3229581212376104992, guid: deb9a726bb0d2de30838646c31d0df1f, type: 3}
+        Offset: {x: 0.05, y: 0.6225, z: 0.2}
+        Yaw: 180
+        Scale: 1
+    - Label: "Kurabiye Stand\u0131"
+      Cost: 1200
+      Icon: Furniture/Cafe_Table_1
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 5736183970148271116, guid: 846e20bc1f0665e3d84a06f721c98c02, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 0.75
+      - Prefab: {fileID: 6944226334191587614, guid: 178c3d036c056614d8d03534f4c70cea, type: 3}
+        Offset: {x: -0.8, y: 0, z: 0}
+        Yaw: 90
+        Scale: 0.8
+      - Prefab: {fileID: 6944226334191587614, guid: 178c3d036c056614d8d03534f4c70cea, type: 3}
+        Offset: {x: 0.8, y: 0, z: 0}
+        Yaw: 270
+        Scale: 0.8
+      - Prefab: {fileID: 1102112549676574604, guid: ce335b4bcd0119d77889c866805ad58f, type: 3}
+        Offset: {x: -0.2, y: 0.6225, z: -0.1}
+        Yaw: 180
+        Scale: 1
+      - Prefab: {fileID: 2483162765149366368, guid: 0066e8bdce31a432a804436042e114c4, type: 3}
+        Offset: {x: 0, y: 0.6225, z: -0.05}
+        Yaw: 180
+        Scale: 0.7
+      - Prefab: {fileID: 4100331918797117975, guid: d57dc00338eedadab9a704611280016b, type: 3}
+        Offset: {x: 0.5, y: 1.1, z: 2.3}
+        Yaw: 180
+        Scale: 0.8
+  - Id: lobby_art
+    Name: "Lobi Tablolar\u0131"
+    Scope: 1
+    Kind: 0
+    StartLevel: 0
+    Anchors:
+    - {x: -5, y: 1.45, z: 3.33}
+    - {x: 5, y: 1.45, z: 3.33}
+    Levels:
+    - Label: Tablolar
+      Cost: 100
+      Icon: Furniture/Painting_1
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 7637386205065404671, guid: 60f02a0d3ee83ff5b9245ff2ed5bd0e9, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.14
+    - Label: "B\xFCy\xFCk Tablolar"
+      Cost: 250
+      Icon: Furniture/Picture_08
+      Tint: {r: 1, g: 1, b: 1, a: 0}
+      Pieces:
+      - Prefab: {fileID: 3951703657491467656, guid: a9be72b4f730c2824bcea089d35a637c, type: 3}
+        Offset: {x: 0, y: 0, z: 0}
+        Yaw: 180
+        Scale: 1.24

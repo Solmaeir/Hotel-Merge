@@ -1,0 +1,20 @@
+FOREST MAGIC WORKSHOP FREE SAMPLE LICENSE v1.0
+
+Copyright (c) 2026 Raven Dice Studio. All rights reserved.
+
+You may:
+
+1. Use the included assets in personal and commercial end products.
+2. Modify, crop, resize, recolor, and combine the assets as needed for those end products.
+3. Use the assets in an unlimited number of end products created by you or your organization.
+
+You may not:
+
+1. Resell, redistribute, share, sublicense, or give away the original assets or modified source assets as standalone files.
+2. Include the assets in another asset pack, template pack, stock library, or other product whose primary value is the included source assets.
+3. Claim authorship or ownership of the original artwork.
+4. Use the assets to train, fine-tune, or evaluate generative AI models or datasets.
+
+Attribution is not required. Credit to the publisher is appreciated.
+
+The assets are provided “as is,” without warranty of any kind, express or implied.
